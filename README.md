@@ -1,9 +1,23 @@
 # 📣 Marketing Campaign Performance Dashboard (Power BI)
 
+## 📥 Downloads
+
+| File | Description |
+|---|---|
+| [📊 Marketing Campaign Performance Dashboard.pbix](Marketing%20Campaign%20Performance%20Dashboard.pbix) | Power BI dashboard file |
+
+## 🖼️ Screenshots
+
+![Page 1 — Campaign Overview](Screenshot%202026-06-05%20180235.png)
+![Page 2 — Platform & Funnel](Screenshot%202026-06-05%20180247.png)
+![Page 3 — Audience & Region](Screenshot%202026-06-05%20180305.png)
+
+---
+
 An interactive **Power BI** dashboard that tracks and evaluates multi-channel marketing campaigns —
 measuring **ROI, conversion rates, and cost efficiency** across platforms to guide budget allocation.
 
-Delivered as an open, source-control-friendly **`.pbip`** (Power BI Project).
+Delivered as an open, source-control-friendly **`.pbix`** (Power BI) file.
 
 ---
 
@@ -22,14 +36,14 @@ Conversions ≈ 1–5% of clicks, ROI = (Revenue−Spend)/Spend, etc.)
 
 ## 🧱 Model & DAX
 Star schema: **Campaigns** fact + a **DateTable** (`List.Dates`) related on `Campaign Start Date → Date`.
-Measures (named to avoid clashing with same-named columns): `Total Spend`, `Total Revenue`,
-`Total Impressions/Clicks/Leads/Conversions`, `Total Campaigns`, `ROI`, `CTR`, `Conv Rate`,
-`Cost per Click`, `Cost per Mille`, `Acquisition Cost`, `Revenue per Campaign`.
+Measures: `Total Spend`, `Total Revenue`, `Total Impressions/Clicks/Leads/Conversions`, `Total Campaigns`,
+`ROI`, `CTR`, `Conv Rate`, `Cost per Click`, `Cost per Mille`, `Acquisition Cost`, `Revenue per Campaign`.
 
 ## 📊 Dashboard (3 pages)
 1. **Campaign Overview** — KPI cards (Spend, Revenue, ROI, CTR, Conv Rate), revenue trend, Spend vs Revenue by Platform, ROI by Campaign Type, slicers.
 2. **Platform & Funnel** — impression/click/lead/conversion KPIs, conversion funnel, CPC & CPM by platform, CTR/Conv trend.
 3. **Audience & Region** — revenue map by region, conversions by audience segment, acquisition cost by segment, top-campaigns table.
+
 A left slicer panel (Platform, Campaign Type, Audience Segment, Year) cross-filters every page.
 
 ## 💡 Key Insights (sample data)
@@ -38,14 +52,13 @@ A left slicer panel (Platform, Campaign Type, Audience Segment, Year) cross-filt
 - High-reach platforms aren’t always the most efficient — compare CTR and CAC, not just impressions.
 
 ## 🚀 Open it
-Open [`dashboard/Marketing Campaign Performance Dashboard.pbip`](dashboard/Marketing%20Campaign%20Performance%20Dashboard.pbip)
-in **Power BI Desktop (2026)**. Data is embedded (no path to fix). Allow Azure/Bing maps for the regional map.
+Open `Marketing Campaign Performance Dashboard.pbix` in **Power BI Desktop**. Data is embedded (no path to fix).
 
 ## 📁 Structure
 ```
 README.md
 data/marketing_campaigns.csv
-dashboard/  <.pbip + .SemanticModel + .Report>
+Marketing Campaign Performance Dashboard.pbix
 ```
 
 ## ✅ Conclusion
